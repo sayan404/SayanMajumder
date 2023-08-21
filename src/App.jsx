@@ -6,7 +6,6 @@ import About from './components/About/About'
 import Projects from './components/Projects/Projects'
 import Education from './components/Education/Education'
 import Skills from './components/Skills/Skills'
-import Header from './components/Layout/header'
 import Contact from './components/Contact/Contact'
 function App() {
   useEffect(() => {
