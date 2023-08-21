@@ -7,10 +7,11 @@ import Box from '@mui/material/Box'
 import SpeedDial from '@mui/material/SpeedDial'
 import SpeedDialAction from '@mui/material/SpeedDialAction'
 import InfoIcon from '@mui/icons-material/Info'
-import EventIcon from '@mui/icons-material/Event'
 import AccountTreeIcon from '@mui/icons-material/AccountTree'
-import Diversity3Icon from '@mui/icons-material/Diversity3'
+import SchoolIcon from '@mui/icons-material/School';
 import Backdrop from '@mui/material/Backdrop'
+import DownhillSkiingIcon from '@mui/icons-material/DownhillSkiing';
+import ScienceIcon from '@mui/icons-material/Science';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useNavigate } from 'react-router-dom'
@@ -24,10 +25,11 @@ const Header = ({ highLight }) => {
   const navigate = useNavigate()
   const actionsForLoggedInUsers = [
     { icon: <InfoIcon />, name: 'About', func: about },
-    { icon: <EventIcon />, name: 'Skills', func: Skills },
+    { icon: <DownhillSkiingIcon />, name: 'Skills', func: Skills },
     { icon: <AccountTreeIcon />, name: 'Projects', func: projects },
-    { icon: <Diversity3Icon />, name: 'Education', func: Education },
+    { icon: <SchoolIcon />, name: 'Education', func: Education },
     { icon: <CallIcon />, name: 'Contact', func: contact },
+    { icon: <ScienceIcon />, name: 'Experience', func: experience },
   ]
 
   function about() {
@@ -38,6 +40,9 @@ const Header = ({ highLight }) => {
   }
   function projects() {
     navigate('/projects')
+  }
+  function experience() {
+    navigate('/experience')
   }
   function Education() {
     navigate('/education')
@@ -94,6 +99,7 @@ const Header = ({ highLight }) => {
             <Link to={'/'}><p className={(highLight === 'About') ? "About" : ""} >About</p></Link>
             <Link to={'/skills'}><p className={(highLight === 'Skills') ? "Skills" : ""} >Skills</p></Link>
             <Link to={'/projects'}><p className={(highLight === 'Projects') ? "Projects" : ""} >Projects</p></Link>
+            <Link to={'/experience'}><p className={(highLight === 'Experience') ? "Experience" : ""} >Experience</p></Link>
             <Link to={'/education'}><p className={(highLight === 'Education') ? "Education" : ""} >Education</p></Link>
             <Link to={'/contact'}><p className={(highLight === 'Contact') ? "Contact" : ""} >Contact</p></Link>
           </ul>

@@ -42,7 +42,8 @@
 .Skills,
 .Projects,
 .Education,
-.Contact {
+.Contact,
+.Experience {
     padding: 10px;
     color: green;
     border-bottom: 3px solid blue;

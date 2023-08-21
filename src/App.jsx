@@ -7,6 +7,7 @@ import Projects from './components/Projects/Projects'
 import Education from './components/Education/Education'
 import Skills from './components/Skills/Skills'
 import Contact from './components/Contact/Contact'
+import Experience from './components/Experience/Experience'
 function App() {
   useEffect(() => {
     WebFont.load({
@@ -22,6 +23,7 @@ function App() {
         <Route path='/' element={<About />} />
         <Route path='/skills' element={<Skills />} />
         <Route path='/projects' element={<Projects />} />
+        <Route path='/experience' element={<Experience/>} />
         <Route path='/education' element={<Education />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
