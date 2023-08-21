@@ -9,7 +9,7 @@ import Button from '@mui/material/Button';
 import ArrowCircleDownOutlinedIcon from '@mui/icons-material/ArrowCircleDownOutlined';
 import personal_img from '../../assets/personal_img.png'
 import myResume from '../../assets/MyResume.pdf'
-import Header from '../Layout/header'
+import Header from '../Layout/Header'
 import { Link } from 'react-router-dom';
 const About = () => {
   const [highLight, setHighLight] = useState('About')

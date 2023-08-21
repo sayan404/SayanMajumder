@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react'
-import Header from '../Layout/header'
+import Header from '../Layout/Header'
 import './Contact.css'
 import emailjs from '@emailjs/browser';
 import AOS from 'aos'

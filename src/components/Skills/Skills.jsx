@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Header from '../Layout/header'
+import Header from '../Layout/Header'
 import AOS from 'aos'
 import './Skills.css'
 import 'aos/dist/aos.css'

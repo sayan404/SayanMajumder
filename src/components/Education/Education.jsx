@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 /* "Ubuntu Mono",monospace */
-import Header from '../Layout/header'
+import Header from '../Layout/Header'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import './Education.css'
