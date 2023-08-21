@@ -1,0 +1,119 @@
+.navAdjust{
+    position: absolute;
+    top: 0;
+}
+.homeContainer {
+    background-color: rgba(243, 250, 250, 0.14);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.leftHomeContainer {
+    width: 50vw;
+    height: 100%;
+    margin: auto 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5vh;
+    animation: floating 2s ease infinite;
+}
+
+
+
+.innerPTags {
+    display: flex;
+    flex-direction: row;
+    word-wrap: break-word;
+}
+
+.p-first-child {
+    font: 500 5vh Product Sans;
+    color: #041c43be;
+    padding: 1.5vh;
+    margin-bottom: 5vh;
+    text-decoration: underline;
+}
+.special{
+    margin-top: 5vh !important ;
+}
+
+.first-child {
+    font: 500 3vh Product Sans;
+    letter-spacing: 2px;
+    line-height: 4vh;
+    padding: 2vh;
+    color: #05142db4;
+}
+.social_handels{
+    padding-top: 2vh;
+}
+.social_handels > a {
+    padding: 1vh;
+}
+.rightHomeContainer {
+    height: 60vh;
+    margin-top: 10vh;
+    margin-right: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: floating 2s ease infinite;
+}
+
+.personal_img {
+    height: 80%;
+    width: auto;
+    border-radius: 100%;
+    margin: 0 auto;
+    box-shadow: rgba(4, 17, 157, 0.87) 0px 5px 15px;
+}
+
+.rightHomeContainer>p {
+    font: 300 2.5vh JetBrains Mono;
+    color: #4285F4;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, 0px);
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .homeContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 5vh;
+    }
+
+    @keyframes floating {
+        0% {
+            transform: translateY(0, 0)
+        }
+
+        50% {
+            transform: translateY(0, 15px);
+        }
+
+        100% {
+            transform: translateY(0, 0px);
+        }
+    }
+}

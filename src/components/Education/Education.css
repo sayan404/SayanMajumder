@@ -1,0 +1,46 @@
+.educationMainContainer{
+    height: 100%;
+    margin: auto 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5vh;
+}
+.qualification {
+    width: 65%;
+    padding: 4vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.qualification > p:first-child{
+    padding: 1vh;
+    font-size: 3.5vh;
+    font-weight: 800;
+    color: rgba(11, 149, 236, 0.712);
+}
+.educQualidfic{
+    padding: 0 2vh;
+    color: rgba(145, 176, 195, 0.822);
+    font: 300 2.5vh  monospace;
+}
+.qualification-1 {
+    width: 65%;
+    padding: 4vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.qualification-1 >  p:first-child{
+    /* background-color: red; */
+    text-align: left;
+    padding: 1vh;
+    font-size: 3.5vh;
+    font-weight: 800;
+    color: rgba(11, 149, 236, 0.712);
+}
+.educQualidfi-1{
+    padding: 0 2vh;
+    color: rgba(145, 176, 195, 0.822);
+    font: 300 2.5vh  monospace;
+    text-align: left;
+    align-items: flex-start;
+}

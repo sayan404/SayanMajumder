@@ -1,0 +1,19 @@
+.projectMainContainer {
+    width: 100vw;
+}
+
+.tag_line {
+    font: 500 5vh Product Sans;
+    text-align: center;
+    color: #041c43be;
+    padding: 1.5vh;
+    margin-bottom: 5vh;
+    text-decoration: underline;
+}
+
+.bottom-cntainer {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
