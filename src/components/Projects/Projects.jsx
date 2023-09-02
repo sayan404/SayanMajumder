@@ -15,7 +15,7 @@ const PresonalProjects = [
     name: 'ProDone',
     description: "An ecommarce web application specially made for college students",
     githubLink: 'https://github.com/sayan404/ProDone',
-    deployedLink: 'prodone.onrender.com',
+    deployedLink: 'https://prodone.onrender.com',
     img: ProDoneTemplate,
     techStack: [
       'ReactJs', 'ReduxJs', 'REST API', 'NodeJs', 'ExpressJs', 'MongoDB'
@@ -35,7 +35,7 @@ const PresonalProjects = [
     name: 'Yumazy',
     description: "An Application that provides amaxing recipes of foods",
     githubLink: 'https://github.com/sayan404/Yumazy',
-    deployedLink: 'yumazy-8eym.vercel.app',
+    deployedLink: 'https://yumazy-8eym.vercel.app',
     img: YumazyThumbnail,
     techStack: [
       'ReactJs', 'EDAMAM APIs'
@@ -45,7 +45,7 @@ const PresonalProjects = [
     name: 'Get-Set-Go',
     description: "The one stop solution to experience the rich heritage and culture of India",
     githubLink: 'https://github.com/sayan404/Get-Set-Go',
-    deployedLink: 'niloysikdar.github.io/Get-Set-Go',
+    deployedLink: 'https://niloysikdar.github.io/Get-Set-Go',
     img: GetSetGoThumbnail,
     techStack: [
       'HTML', 'CSS' , 'JavaScript' , 'APIs'
@@ -55,7 +55,7 @@ const PresonalProjects = [
     name: 'GDSC-JGEC-Promo',
     description: "A website that promotes GDSC-JGEC on the college.",
     githubLink: 'https://github.com/sayan404/gdsc-jgec-promo',
-    deployedLink: 'gdsc-jgec-promo.vercel.app',
+    deployedLink: 'https://gdsc-jgec-promo.vercel.app',
     img: gdscThumbnel,
     techStack: [
       'ReactJs'

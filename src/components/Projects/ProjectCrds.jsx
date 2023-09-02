@@ -11,12 +11,6 @@ const ProjectCrds = ({ techStack, img, deployedLink, githubLink, description, na
     useEffect(() => {
         AOS.init()
     }, [])
-    const handleGithubButtonClick = () => {
-        window.location.href = githubLink
-    }
-    const handleLiveButtonClick = () => {
-        window.location.href = deployedLink
-    }
     return (
         <>
             <div className="card" data-aos="flip-right" data-aos-duration="2000" ata-aos-delay="100" >
@@ -32,13 +26,13 @@ const ProjectCrds = ({ techStack, img, deployedLink, githubLink, description, na
                         }
                     </div>
                     <div className='buttons' >
-                        <Button variant="outlined" sx={{ color: 'black' }} startIcon={<GitHubIcon />} onClick={handleGithubButtonClick}>
+                        <Link to={githubLink} target='_blank'><Button variant="outlined" sx={{ color: 'black' }} startIcon={<GitHubIcon />} >
                             Github
-                        </Button>
+                        </Button></Link>
                         {
-                            deployedLink ? <Button variant="outlined" sx={{ color: 'blue' , margin : '2vh' }} startIcon={<DirectionsRunIcon />} onClick={handleLiveButtonClick}>
+                            deployedLink ? <Link to={deployedLink} target='_blank'><Button variant="outlined" sx={{ color: 'blue', margin: '2vh' }} startIcon={<DirectionsRunIcon />} >
                                 Live Here
-                            </Button>
+                            </Button></Link>
                                 : <></>
                         }
                     </div>
