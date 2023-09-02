@@ -21,7 +21,7 @@ const ProjectCrds = ({ techStack, img, deployedLink, githubLink, description, na
                     <div className='techstackConponent'>
                         {techStack ?
                             (techStack.map((tech, idx) => {
-                                return <p key={idx} style={{ backgroundColor: colors[idx], color: 'white', gap: "20px", width: '30%' }} className='techstacks'>{tech}</p>
+                                return <p key={idx} style={{ backgroundColor: colors[idx], color: 'white', gap: "20px", width: '30%' , fontSize : '1.5vh'}} className='techstacks'>{tech}</p>
                             })) : <></>
                         }
                     </div>

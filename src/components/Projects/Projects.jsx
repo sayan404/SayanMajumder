@@ -8,6 +8,7 @@ import YumazyThumbnail from '../../assets/YumazyThumbnail.png'
 import PeerAiThumbnel from '../../assets/PeerAiThumbnel.png'
 import gdscThumbnel from '../../assets/gdscThumbnel.png'
 import GetSetGoThumbnail from '../../assets/GetSetGoThumbnail.png'
+import nftfy from '../../assets/nftfy.png'
 
 import ProjectCrds from './ProjectCrds'
 const PresonalProjects = [
@@ -32,6 +33,18 @@ const PresonalProjects = [
     ]
   },
   {
+    name: 'NEFTFY',
+    description: "An application that provides info. about token , pair addres also can connect your wallet.",
+    githubLink: 'https://github.com/sayan404/neftify',
+    deployedLink: 'https://main--timely-faun-b54f6e.netlify.app/',
+    img: nftfy,
+    techStack: [
+      'ReactJs',
+      'RainbowKit',
+      'APIs'
+    ]
+  },
+  {
     name: 'Yumazy',
     description: "An Application that provides amaxing recipes of foods",
     githubLink: 'https://github.com/sayan404/Yumazy',
@@ -48,7 +61,7 @@ const PresonalProjects = [
     deployedLink: 'https://niloysikdar.github.io/Get-Set-Go',
     img: GetSetGoThumbnail,
     techStack: [
-      'HTML', 'CSS' , 'JavaScript' , 'APIs'
+      'HTML', 'CSS', 'JavaScript', 'APIs'
     ]
   },
   {
@@ -60,7 +73,7 @@ const PresonalProjects = [
     techStack: [
       'ReactJs'
     ]
-  }
+  },
 ]
 
 const Projects = () => {
@@ -78,8 +91,8 @@ const Projects = () => {
         <p className='tag_line special'>{'<'}Projects{'/ >'}</p>
 
         <div className='bottom-cntainer'> {
-          PresonalProjects.map((data , idx) => {
-            return (<ProjectCrds key={idx} techStack={data.techStack} img={data.img} deployedLink={data.deployedLink} githubLink={data.githubLink} description={data.description} name={data.name}/>)
+          PresonalProjects.map((data, idx) => {
+            return (<ProjectCrds key={idx} techStack={data.techStack} img={data.img} deployedLink={data.deployedLink} githubLink={data.githubLink} description={data.description} name={data.name} />)
           })
         }
         </div>
