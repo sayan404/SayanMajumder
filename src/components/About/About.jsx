@@ -6,6 +6,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import Button from '@mui/material/Button';
+import EmailIcon from '@mui/icons-material/Email';
 import ArrowCircleDownOutlinedIcon from '@mui/icons-material/ArrowCircleDownOutlined';
 import personal_img from '../../assets/personal_img.png'
 import myResume from '../../assets/MyResume.pdf'
@@ -35,7 +36,7 @@ const About = () => {
 
   return (
     <>
-      <Header highLight={highLight} className='navAdjust'/>
+      <Header highLight={highLight} className='navAdjust' />
       <div className='homeContainer' data-aos="fade-right"
         data-aos-easing="ease-in-back"
         data-aos-delay="300"
@@ -49,19 +50,21 @@ const About = () => {
             </p>
           </div>
           <div className='social_handels'>
-          <Link to="https://github.com/sayan404"><GitHubIcon sx={{fontSize : 36 , color : 'black'}} /></Link>
-          <Link to="https://www.linkedin.com/in/sayan404/"><LinkedInIcon sx={{fontSize : 36}}/></Link>
-          <Link to="https://www.instagram.com/_sayan404_/"><InstagramIcon sx={{fontSize : 36 ,  color : 'red'}}/></Link></div>
+            <Link to="https://github.com/sayan404"  target='_blank'><GitHubIcon sx={{ fontSize: 36, color: 'black' }} /></Link>
+            <Link to="https://www.linkedin.com/in/sayan404/" target='_blank'><LinkedInIcon sx={{ fontSize: 36 }} /></Link>
+            <Link to="https://www.instagram.com/_sayan404_/" target='_blank'><InstagramIcon sx={{ fontSize: 36, color: 'red' }} /></Link>
+            <Link to="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=sayanmajumder0002@gmail.com"  target='_blank'><EmailIcon sx={{ fontSize: 36, color: '#08851b' }} /></Link>
+          </div>
           <Button variant="contained" onClick={handleDownload}
-          sx={{marginTop : "3vh"  , fontSize : 20}}
-          endIcon={<ArrowCircleDownOutlinedIcon />}>
+            sx={{ marginTop: "3vh", fontSize: 20 }}
+            endIcon={<ArrowCircleDownOutlinedIcon />}>
             Resume
           </Button>
         </div>
         <div className='rightHomeContainer'>
           <img src={personal_img} className='personal_img'></img>
         </div>
-      </div>
+      </div >
     </>
   )
 }
